@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {},
+	"launch": {
+		"configurations": [
+			{
+				"type": "bun",
+				"request": "launch",
+				"name": "Debug Bun",
+				"program": "./index.ts",
+				"args": [],
+				"cwd": "./src",
+				"env": {},
+				"strictEnv": false,
+				"watchMode": true,
+				"stopOnEntry": false,
+				"noDebug": false,
+				"runtime": "bun",
+				"runtimeArgs": [],
+			},
+			{
+				"type": "bun",
+				"request": "attach",
+				"name": "Attach to Bun",
+				"url": "ws://localhost:6499/",
+			}
+		]
+	}
+}
